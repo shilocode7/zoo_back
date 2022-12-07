@@ -55,6 +55,7 @@ def crude_zoo(aid=0):
         upd_animal.animal = request_data['animal']
         upd_animal.kind = request_data["kind"]
         upd_animal.size = request_data["size"] 
+        db.session.commit()
         return  {"animal":"updated"}
         
  
